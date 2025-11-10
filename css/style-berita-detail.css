@@ -187,6 +187,7 @@ body {
 
 .menu-col a:hover {
   color: #7574FF;
+  transition: color 0.2s ease;
 }
 
 .address-col p {
