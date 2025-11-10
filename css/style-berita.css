@@ -141,8 +141,12 @@ body {
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
   align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-col {
+  color: #fff;
 }
 
 .footer-logo {
@@ -154,27 +158,54 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 1rem;
+  color: #fff;
 }
 
 .menu-col a {
   display: block;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  margin-bottom: 12px;
+  transition: 0.3s;
 }
 
 .menu-col a:hover {
   color: #7574FF;
 }
 
-.address-col p, .contact-col p {
+.address-col p {
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
+.contact-col h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-col p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
 .contact-col i {
   margin-right: 8px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+/* ===== Responsif Footer ===== */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-col p {
+    justify-content: center;
+  }
 }
 
 /* ===== Responsif ===== */

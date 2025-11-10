@@ -30,9 +30,7 @@ body {
   margin: auto;
 }
 
-/* =========================================
-   NAVBAR
-========================================= */
+/* ===== Navbar ===== */
 .navbar {
   background: linear-gradient(90deg, #101D6B 0%, #05049F 100%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -47,6 +45,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
+  width: 100%;
 }
 
 .logo {
@@ -64,20 +63,6 @@ body {
 .nav-links a.active,
 .nav-links a:hover {
   color: #7574FF;
-}
-
-.login-btn {
-  background: #fff;
-  color: var(--blue);
-  padding: 8px 16px;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: var(--transition);
-}
-
-.login-btn:hover {
-  background: var(--gray);
-  color: var(--blue-dark);
 }
 
 /* =========================================
@@ -318,15 +303,6 @@ input[type="radio"] {
   }
 
   .contact-col p {
-    justify-content: center;
-  }
-
-  .nav-content {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
